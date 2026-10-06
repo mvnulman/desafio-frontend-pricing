@@ -1,4 +1,5 @@
 import "./globals.css";
+import ThemeRegistry from "./ThemeRegistry";
 
 export const metadata = {
   title: "Painel de Margem do Catálogo",
@@ -8,7 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body>{children}</body>
+      <body>
+        <ThemeRegistry>{children}</ThemeRegistry>
+      </body>
     </html>
   );
 }
